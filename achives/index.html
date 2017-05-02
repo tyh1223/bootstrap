@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <title>My First HTML Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- <h1>This is a big sentence</h1>
+    <h2>Medium sized</h2>
+    <h3>Smaller</h3>
+    <button>Click me!</button>
+    <br>
+    <hr>
+    <p>
+      Hello there!<br>
+      <b>Some bold text</b><br>
+      <i>Some italic Text</i><br>
+      <s>strikethrought text</s>
+    </p>
+    <img src="https://goo.gl/g7aFxz" alt="lol where is the image"><br>
+    <span>lol_1</span>
+    <span>lol_2</span>
+
+    <br> -->
+
+    <h1>Dog Voting App</h1>
+    <p>Simple page to vote for Dogs</p>
+<!--
+    <img height="10%" src="https://goo.gl/AtXSbQ" alt="">
+    <button>Me!</button>
+
+    <img height="10%" src="https://goo.gl/O2264P" alt="">
+    <button>Me!</button><br>
+
+    <img height="10%" src="https://goo.gl/JAdNgj" alt="">
+    <button>Me!</button>
+
+    <img height="10%" src="https://goo.gl/68rhpv" alt="">
+    <button>Me!</button> -->
+
+    <!-- <table>
+      <tr>
+        <td>
+          <span>Count: 0</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button>Me!</button>
+        </td>
+      </tr>
+    </table> -->
+
+    <table>
+      <tr>
+        <td>
+          <img height = "30%" src="https://goo.gl/j5iQRv" alt="">
+        </td>
+        <td>
+          Count:<span id="dogOneCount">0</span><br>
+          <button onclick="increaseCountDogOne()">Me!</button>
+        </td>
+        <td>
+          <img height = "30%" src="https://goo.gl/j5iQRv" alt="">
+        </td>
+        <td>
+          Count:<span id="dogTwoCount">0</span><br>
+          <button onclick="increaseCountDogTwo()">Me!</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img height = "30%" src="https://goo.gl/j5iQRv" alt="">
+        </td>
+        <td>
+          Count:<span id="dogThreeCount">0</span><br>
+          <button onclick="increaseCountDogThree()">Me!</button>
+        </td>
+        <td>
+          <img height = "30%" src="https://goo.gl/j5iQRv" alt="">
+        </td>
+        <td>
+          Count:<span id="dogFourCount">0</span><br>
+          <button onclick="increaseCountDogFour()">Me!</button>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+    var dog1 = 0
+    var dog2 = 0
+    var dog3 = 0
+    var dog4 = 0
+    function increaseCountDogOne(){
+      dog1 += 1
+      $("#dogOneCount").html(dog1)
+    }
+    function increaseCountDogTwo(){
+      dog2 += 1
+      $("#dogTwoCount").html(dog2)
+    }
+    function increaseCountDogThree(){
+      dog3 += 1
+      $("#dogThreeCount").html(dog3)
+    }
+    function increaseCountDogFour(){
+      dog4 += 1
+      $("#dogFourCount").html(dog4)
+    }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,102 @@
+
+<html>
+  <head>
+    <title>My Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">TYH</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li id= "navHome"><a href="#" onclick="gotoHome()"><i class="fa fa-home"></i>Home</a></li>
+                  <li id= "navSkills"><a href="#" onclick="gotoSkills()"<i class="fa fa-bolt"></i>Skills</a></li>
+                  <li id= "navContact"><a href="#" onclick="gotoContact()"><i class="fa fa-location-arrow"></i>Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover" id="home">
+            <img height = "30%" src="https://goo.gl/j5iQRv" class = "img-circle" alt="">
+            <h1 class="cover-heading">TYH HELPLINE</h1>
+            <p class="lead">Howdy people. How is your day? How may i help you?<br>I am currently an undergrad studying in SMU</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+
+          <div class="inner cover" id="skills">
+            <h1 class="cover-heading">TYH HELPLINE</h1>
+            <p class="lead">I am good in sleeping. <br>Sleeping is my best skill</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+
+          <div class="inner cover" id="contact">
+            <h1 class="cover-heading">TYH HELPLINE</h1>
+            <p class="lead">Contact me at 995!</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <script>
+      $(function(){
+        $("#skills").hide()
+        $("#contact").hide()
+        $("#navHome").attr('class','active')
+      })
+      function gotoHome(){
+        $("#skills").hide()
+        $("#contact").hide()
+        $("#home").slideDown()
+        $("#navHome").attr('class','active')
+        $("#navSkills").attr('class','')
+        $("#navContact").attr('class','')
+      }
+      function gotoSkills(){
+        $("#home").hide()
+        $("#contact").hide()
+        $("#skills").slideDown()
+        $("#navSkills").attr('class','active')
+        $("#navHome").attr('class','')
+        $("#navContact").attr('class','')
+      }
+      function gotoContact(){
+        $("#skills").hide()
+        $("#home").hide()
+        $("#contact").slideDown()
+        $("#navContact").attr('class','active')
+        $("#navSkills").attr('class','')
+        $("#navHome").attr('class','')
+      }
+    </script>
+  </body>
+</html>

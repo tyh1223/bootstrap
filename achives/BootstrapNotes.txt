@@ -1,0 +1,51 @@
+hmtl, head + body on the same level
+
+
+emmet short way:
+html>(head>title)+body>p
+'>' into
+'+' on the same level
+
+p: paragraph
+hr: horizontal line
+b: bold
+i: italic
+s: strikethrough text
+img: image
+  src: the link, the source
+    url shorterner: https://goo.gl/
+  alt: image not found, write the text
+span: put things on the same line
+
+duplicate: ctrl+shift+d
+move line up and down: ctrl
+comment: ctrl+/
+
+#: refers to id of smth
+.: class of smth
+
+
+CSS: how to style your page
+override: inline > id > class
+
+to import: https://cdnjs.com/libraries/jquery/
+
+http://cssreference.io/
+
+bootstrap
+&nbsp; to code out the spaces
+
+to import: https://cdnjs.com/libraries/twitter-bootstrap/
+
+http://getbootstrap.com/
+
+grid
+container
+rows
+column
+
+icons
+font awesome cdn
+font awesome io
+
+theme pages: bootstrap themes: bootswatch
